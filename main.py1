@@ -1,0 +1,17 @@
+def linear_search_product(product_list, target_product):
+    found = False
+    for product in product_list:
+        if product == target_product:
+            found = True
+            break
+    if found:
+        return target_product
+    else:
+        return []
+
+
+products = ["apple", "banana", "orange", "grape", "mango"]
+target = "orange"
+target = 'shoes'
+result = linear_search_product(products, target)
+print(result)
